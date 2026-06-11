@@ -23,21 +23,21 @@ const whatsappNumber = "917708642784";
 let finalMessage = "";
 
 function showField(field){
-  field.classList.add("show");
+  if(field) field.classList.add("show");
 }
 
 function hideField(field){
-  field.classList.remove("show");
+  if(field) field.classList.remove("show");
 }
 
-destination.addEventListener("input", () => {
+destination?.addEventListener("input", () => {
   if(destination.value.trim().length > 1){
     showField(locationFields);
   }
 });
 
 [pickup, drop].forEach(input => {
-  input.addEventListener("input", () => {
+  input?.addEventListener("input", () => {
     if(pickup.value.trim() && drop.value.trim()){
       showField(dateFields);
     }
@@ -45,7 +45,7 @@ destination.addEventListener("input", () => {
 });
 
 [pickupDate, dropDate].forEach(input => {
-  input.addEventListener("change", () => {
+  input?.addEventListener("change", () => {
     if(pickupDate.value && dropDate.value){
       showField(vehicleFields);
     }
@@ -53,20 +53,20 @@ destination.addEventListener("input", () => {
 });
 
 [vehicle, passengers].forEach(input => {
-  input.addEventListener("input", () => {
+  input?.addEventListener("input", () => {
     if(vehicle.value && passengers.value){
       showField(stayFields);
     }
   });
 
-  input.addEventListener("change", () => {
+  input?.addEventListener("change", () => {
     if(vehicle.value && passengers.value){
       showField(stayFields);
     }
   });
 });
 
-accommodation.addEventListener("change", () => {
+accommodation?.addEventListener("change", () => {
   if(accommodation.value === "Yes"){
     showField(guestFields);
   }else{
@@ -78,7 +78,9 @@ accommodation.addEventListener("change", () => {
 
 function formatDateTime(value){
   if(!value) return "";
+
   const date = new Date(value);
+
   return date.toLocaleString("en-IN", {
     day:"2-digit",
     month:"short",
@@ -124,7 +126,7 @@ function validateForm(){
   return true;
 }
 
-previewBtn.addEventListener("click", () => {
+previewBtn?.addEventListener("click", () => {
   if(!validateForm()) return;
 
   const stayNeeded = accommodation.value;
@@ -168,7 +170,7 @@ Please share the package details.`;
   modal.show();
 });
 
-sendWhatsapp.addEventListener("click", () => {
+sendWhatsapp?.addEventListener("click", () => {
   const encodedMessage = encodeURIComponent(finalMessage);
   window.open(`https://wa.me/${whatsappNumber}?text=${encodedMessage}`, "_blank");
 });

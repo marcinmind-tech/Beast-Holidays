@@ -1,0 +1,256 @@
+.about-hero{
+  min-height:70vh;
+  position:relative;
+  display:flex;
+  align-items:center;
+  padding:140px 0 80px;
+  overflow:hidden;
+  background:#000;
+  color:#fff;
+}
+
+.about-hero-video{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+
+.about-hero-overlay{
+  position:absolute;
+  inset:0;
+  background:
+    radial-gradient(circle at 20% 20%, rgba(246,196,95,.28), transparent 30%),
+    linear-gradient(90deg, rgba(0,0,0,.92), rgba(0,0,0,.52));
+}
+
+.about-hero .container{
+  position:relative;
+  z-index:2;
+}
+
+.about-hero-content{
+  max-width:780px;
+}
+
+.about-hero h1{
+  font-size:clamp(2.4rem,5vw,4.5rem);
+  font-weight:700;
+  line-height:1.05;
+  letter-spacing:-2px;
+  margin-bottom:18px;
+}
+
+.about-hero p{
+  color:rgba(255,255,255,.78);
+  font-size:1.05rem;
+  line-height:1.8;
+  max-width:680px;
+}
+
+.about-intro{
+  padding:95px 0;
+  background:#fff;
+}
+
+.about-intro h2,
+.about-title,
+.why-about h2,
+.mission-box h2{
+  font-size:clamp(1.9rem,4vw,3.3rem);
+  font-weight:800;
+  letter-spacing:-1px;
+}
+
+.about-intro p{
+  color:#666;
+  line-height:1.9;
+  font-size:1.05rem;
+}
+
+.about-services{
+  padding:95px 0;
+  background:#f7f4ee;
+}
+
+.about-card{
+  background:#fff;
+  border-radius:26px;
+  padding:32px;
+  height:100%;
+  box-shadow:0 18px 45px rgba(0,0,0,.07);
+  transition:.3s;
+}
+
+.about-card:hover{
+  transform:translateY(-8px);
+}
+
+.about-card i{
+  width:60px;
+  height:60px;
+  display:grid;
+  place-items:center;
+  border-radius:20px;
+  background:#111;
+  color:var(--gold);
+  font-size:1.55rem;
+  margin-bottom:22px;
+}
+
+.about-card h4{
+  font-weight:900;
+  margin-bottom:12px;
+}
+
+.about-card p{
+  color:#666;
+  line-height:1.75;
+  margin:0;
+}
+
+.why-about{
+  padding:95px 0;
+  background:#fff;
+}
+
+.why-about p{
+  color:#666;
+  line-height:1.9;
+}
+
+.why-list{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:16px;
+}
+
+.why-list div{
+  background:#f8f8f8;
+  border:1px solid rgba(0,0,0,.06);
+  border-radius:18px;
+  padding:18px;
+  font-weight:800;
+  color:#333;
+}
+
+.why-list i{
+  color:var(--gold);
+  margin-right:8px;
+}
+
+.about-stats{
+  padding:70px 0;
+  background:#111;
+}
+
+.stat-box{
+  color:#fff;
+  padding:24px 15px;
+}
+
+.stat-box h3{
+  color:var(--gold);
+  font-weight:900;
+  font-size:2.4rem;
+}
+
+.stat-box p{
+  color:rgba(255,255,255,.7);
+  font-weight:700;
+  margin:0;
+}
+
+.mission-section{
+  padding:95px 0;
+  background:#f7f4ee;
+}
+
+.mission-box{
+  background:
+    linear-gradient(135deg,rgba(0,0,0,.88),rgba(0,0,0,.72)),
+    url("images/ooty.webp") center/cover;
+  color:#fff;
+  border-radius:36px;
+  padding:70px 40px;
+  text-align:center;
+}
+
+.mission-box p{
+  max-width:760px;
+  margin:0 auto 30px;
+  color:rgba(255,255,255,.75);
+  line-height:1.8;
+}
+
+.nav-link.active{
+  color:var(--gold) !important;
+}
+
+@media(max-width:991px){
+  .about-hero{
+    min-height:auto;
+    padding:125px 0 70px;
+    text-align:center;
+  }
+
+  .about-hero-content,
+  .about-hero p{
+    margin:auto;
+  }
+
+  .why-list{
+    grid-template-columns:1fr;
+  }
+}
+
+@media(max-width:575px){
+  .about-hero{
+    padding:110px 0 55px;
+  }
+
+  .about-hero h1{
+    font-size:2.2rem;
+    letter-spacing:-1px;
+  }
+
+  .about-intro,
+  .about-services,
+  .why-about,
+  .mission-section{
+    padding:65px 0;
+  }
+
+  .about-card{
+    padding:26px;
+    text-align:center;
+  }
+
+  .about-card i{
+    margin-left:auto;
+    margin-right:auto;
+  }
+
+  .mission-box{
+    padding:50px 22px;
+    border-radius:25px;
+  }
+}
+.footer-credit{
+    margin-top:20px;
+    font-size:.95rem;
+    color:rgba(255,255,255,.65);
+    font-weight:500;
+}
+
+.footer-credit a{
+    color:var(--gold) !important;
+    text-decoration:none;
+    font-weight:800;
+    transition:.3s ease;
+}
+
+.footer-credit a:hover{
+    color:#ffffff !important;
+}
