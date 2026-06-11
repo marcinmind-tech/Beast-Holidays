@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Beast Holidays</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@500;600;700;800&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg custom-navbar fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">
+      Beast <span>Holidays</span>
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">
+      <i class="bi bi-list"></i>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-end d-none d-lg-flex">
+      <ul class="navbar-nav align-items-center">
+        <li><a class="nav-link" href="#">Home</a></li>
+        <li><a class="nav-link" href="#">Tour Packages</a></li>
+        <li><a class="nav-link" href="#">Vehicles</a></li>
+        <li><a class="nav-link" href="#">About Us</a></li>
+        <li><a class="nav-link nav-btn" href="#">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="offcanvas offcanvas-start" tabindex="-1" id="mobileMenu">
+  <div class="offcanvas-header">
+    <h5>Beast <span>Holidays</span></h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+  </div>
+
+  <div class="offcanvas-body">
+    <a href="#">Home</a>
+    <a href="#">Tour Packages</a>
+    <a href="#">Vehicles</a>
+    <a href="#">About Us</a>
+    <a href="#">Contact</a>
+  </div>
+</div>
+
+<section class="hero">
+  <video autoplay muted loop playsinline class="hero-video">
+    <source src="videos/travel-bg.mp4" type="video/mp4">
+  </video>
+
+  <div class="hero-overlay"></div>
+
+  <div class="container hero-content">
+    <div class="row align-items-center g-5">
+
+      <div class="col-lg-6 reveal">
+        <span class="eyebrow">Luxury Travel • Fleet Booking • Tour Packages</span>
+
+        <h1>
+          Make Every Journey Feel Like A Beast Mode Holiday
+        </h1>
+
+        <p>
+          Plan your next trip with Beast Holidays. From pickup to drop,
+          vehicles, stays and custom packages — we make your travel smooth,
+          stylish and memorable.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#enquiry" class="main-btn">Plan My Trip</a>
+          <a href="tel:7708642784" class="phone-btn">
+            <i class="bi bi-telephone-fill"></i> 77086 42784
+          </a>
+        </div>
+
+        <div class="socials">
+          <a href="https://www.facebook.com/www.userbuzytours/" target="_blank"><i class="bi bi-facebook"></i></a>
+          <a href="https://www.instagram.com/_beast_holidays_0802" target="_blank"><i class="bi bi-instagram"></i></a>
+          <a href="https://share.google/GFVcqXby7icSaCAjq" target="_blank"><i class="bi bi-geo-alt-fill"></i></a>
+        </div>
+      </div>
+
+      <div class="col-lg-6 reveal delay" id="enquiry">
+        <div class="enquiry-card">
+          <h3>Quick Enquiry</h3>
+          <p>Fill your trip details and send directly to WhatsApp.</p>
+
+          <form id="tripForm">
+
+            <div class="form-group">
+              <label>Where are you planning to visit?</label>
+              <input type="text" id="destination" placeholder="Example: Ooty, Munnar, Goa" required>
+            </div>
+
+            <div class="step-fields" id="locationFields">
+              <div class="form-group">
+                <label>Pickup Location</label>
+                <input type="text" id="pickup" placeholder="Enter pickup location">
+              </div>
+
+              <div class="form-group">
+                <label>Drop Location</label>
+                <input type="text" id="drop" placeholder="Enter drop location">
+              </div>
+            </div>
+
+            <div class="step-fields" id="dateFields">
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <label>Pickup Date & Time</label>
+                  <input type="datetime-local" id="pickupDate">
+                </div>
+                <div class="col-md-6">
+                  <label>Drop Date & Time</label>
+                  <input type="datetime-local" id="dropDate">
+                </div>
+              </div>
+            </div>
+
+            <div class="step-fields" id="vehicleFields">
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <label>Vehicle Selection</label>
+                  <select id="vehicle">
+                    <option value="">Select Vehicle</option>
+                    <option>Hatchback</option>
+                    <option>Sedan</option>
+                    <option>SUV</option>
+                    <option>Tempo Traveller</option>
+                    <option>Luxury Vehicle</option>
+                  </select>
+                </div>
+
+                <div class="col-md-6">
+                  <label>Passenger Count</label>
+                  <input type="number" id="passengers" min="1" placeholder="Example: 4">
+                </div>
+              </div>
+            </div>
+
+            <div class="step-fields" id="stayFields">
+              <label>Accommodation Needed?</label>
+              <select id="accommodation">
+                <option value="">Select Option</option>
+                <option value="No">No</option>
+                <option value="Yes">Yes</option>
+              </select>
+            </div>
+
+            <div class="step-fields" id="guestFields">
+              <div class="note">
+                Children above 10 years will be considered as adults.
+              </div>
+
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <label>Adult Count</label>
+                  <input type="number" id="adults" min="1" placeholder="Adults">
+                </div>
+
+                <div class="col-md-6">
+                  <label>Child Count</label>
+                  <input type="number" id="children" min="0" placeholder="Children">
+                </div>
+              </div>
+            </div>
+
+            <button type="button" id="previewBtn" class="submit-btn">
+              Preview & Submit
+            </button>
+
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="about-section">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-6 reveal">
+        <span class="section-tag">About Beast Holidays</span>
+        <h2>Premium travel planning with local care.</h2>
+      </div>
+
+      <div class="col-lg-6 reveal delay">
+        <p>
+          Beast Holidays helps you plan comfortable tours, vehicle bookings,
+          family trips, couple trips and group travel. We focus on clean vehicles,
+          flexible planning and easy coordination from enquiry to journey end.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="services-section">
+  <div class="container">
+    <div class="text-center reveal">
+      <span class="section-tag">What We Do</span>
+      <h2 class="section-title">Travel Services</h2>
+    </div>
+
+    <div class="row g-4 mt-4">
+      <div class="col-lg-4 col-md-6 reveal">
+        <div class="service-card">
+          <i class="bi bi-map"></i>
+          <h4>Tour Packages</h4>
+          <p>Customized domestic trips, hill station plans, family holidays and group packages.</p>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 reveal delay">
+        <div class="service-card">
+          <i class="bi bi-car-front"></i>
+          <h4>Vehicle Booking</h4>
+          <p>Cars, SUVs and traveller options for airport pickup, tours and outstation trips.</p>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 reveal">
+        <div class="service-card">
+          <i class="bi bi-buildings"></i>
+          <h4>Accommodation</h4>
+          <p>Need stay? We help arrange suitable rooms based on adults, children and budget.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="destination-section">
+  <div class="container">
+    <div class="text-center reveal">
+      <span class="section-tag">Popular Picks</span>
+      <h2 class="section-title">Destinations People Love</h2>
+    </div>
+
+    <div class="row g-4 mt-4">
+      <div class="col-lg-4 reveal">
+        <div class="destination-card">
+          <img src="images/ooty.webp">
+          <div>
+            <h4>Ooty</h4>
+            <p>Cool weather, tea gardens and peaceful mountain views.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 reveal delay">
+        <div class="destination-card">
+          <img src="images/munnar.webp">
+          <div>
+            <h4>Munnar</h4>
+            <p>Green valleys, misty hills and premium nature escapes.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 reveal">
+        <div class="destination-card">
+          <img src="images/kodaikanal.webp">
+          <div>
+            <h4>Kodaikanal</h4>
+            <p>Lakes, viewpoints and romantic mountain travel plans.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-section reveal">
+  <div class="container">
+    <div class="cta-box">
+      <h2>Ready to plan your next trip?</h2>
+      <p>Send your enquiry now and Beast Holidays will contact you quickly.</p>
+      <a href="#enquiry" class="main-btn">Start Enquiry</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <h4>Beast <span>Holidays</span></h4>
+    <p>Premium tours, vehicles and travel planning.</p>
+
+    <div class="footer-links">
+      <a href="tel:7708642784"><i class="bi bi-telephone"></i> 77086 42784</a>
+      <a href="https://www.instagram.com/_beast_holidays_0802" target="_blank"><i class="bi bi-instagram"></i> Instagram</a>
+      <a href="https://www.facebook.com/www.userbuzytours/" target="_blank"><i class="bi bi-facebook"></i> Facebook</a>
+      <a href="https://share.google/GFVcqXby7icSaCAjq" target="_blank"><i class="bi bi-geo-alt"></i> Location</a>
+    </div>
+
+    <p class="copy">© 2026 Beast Holidays. All Rights Reserved.</p>
+  </div>
+</footer>
+
+<div class="modal fade" id="previewModal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content preview-modal">
+      <div class="modal-header">
+        <h5 class="modal-title">Confirm Your Enquiry</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body" id="previewContent"></div>
+
+      <div class="modal-footer">
+        <button type="button" class="modal-cancel" data-bs-dismiss="modal">Edit</button>
+        <button type="button" id="sendWhatsapp" class="modal-send">
+          Send to WhatsApp
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<a href="https://wa.me/917708642784" class="whatsapp-float" target="_blank">
+  <i class="bi bi-whatsapp"></i>
+</a>
+<a href="tel:7708642784" class="call-float">
+  <i class="bi bi-telephone-fill"></i>
+</a>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
