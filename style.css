@@ -147,7 +147,7 @@ h1,h2,h3,h4,h5,.navbar-brand{
 .section-tag{
   display:inline-block;
   color:var(--gold);
-  font-weight:800;
+  font-weight:600;
   text-transform:uppercase;
   font-size:.8rem;
   letter-spacing:1.8px;
@@ -186,7 +186,7 @@ h1,h2,h3,h4,h5,.navbar-brand{
   padding:15px 30px;
   border-radius:60px;
   text-decoration:none;
-  font-weight:800;
+  font-weight:600;
   transition:.3s;
 }
 
@@ -244,7 +244,7 @@ h1,h2,h3,h4,h5,.navbar-brand{
 
 .enquiry-card h3{
   font-size:1.7rem;
-  font-weight:800;
+  font-weight:600;
   margin-bottom:5px;
 }
 
@@ -260,7 +260,7 @@ h1,h2,h3,h4,h5,.navbar-brand{
 label{
   display:block;
   font-size:.88rem;
-  font-weight:800;
+  font-weight:600;
   margin-bottom:8px;
 }
 
@@ -309,7 +309,7 @@ select:focus{
   margin-top:18px;
   background:#0b0b0b;
   color:#fff;
-  font-weight:900;
+  font-weight:600;
   transition:.3s;
 }
 
@@ -330,7 +330,7 @@ section{
 .about-section h2,
 .section-title{
   font-size:clamp(1.9rem,4vw,3.4rem);
-  font-weight:800;
+  font-weight:600;
   letter-spacing:-1px;
 }
 
@@ -371,7 +371,7 @@ section{
 }
 
 .service-card h4{
-  font-weight:800;
+  font-weight:600;
 }
 
 .service-card p{
@@ -403,7 +403,7 @@ section{
 }
 
 .destination-card h4{
-  font-weight:800;
+  font-weight:600;
 }
 
 .destination-card p{
@@ -427,7 +427,7 @@ section{
 
 .cta-box h2{
   font-size:clamp(1.9rem,4vw,3.2rem);
-  font-weight:800;
+  font-weight:600;
 }
 
 .cta-box p{
@@ -445,7 +445,7 @@ footer{
 
 footer h4{
   font-size:2rem;
-  font-weight:800;
+  font-weight:600;
 }
 
 footer h4 span{
@@ -503,7 +503,7 @@ footer p{
   border:0;
   padding:12px 24px;
   border-radius:50px;
-  font-weight:800;
+  font-weight:600;
 }
 
 .modal-cancel{
@@ -539,7 +539,7 @@ footer p{
   gap:10px;
   text-decoration:none;
   color:#111827;
-  font-weight:800;
+  font-weight:600;
   font-size:.95rem;
   transition:.3s ease;
 }
@@ -794,7 +794,7 @@ footer p{
 
 .offcanvas-body a.active-mobile{
     color:var(--gold) !important;
-    font-weight:800 !important;
+    font-weight:600 !important;
 }
 
 .offcanvas-body a.active-mobile::before{
@@ -823,13 +823,13 @@ footer p{
 
 .home-package-heading h3{
   font-size:1.6rem;
-  font-weight:900;
+  font-weight:600;
   margin:0;
 }
 
 .home-package-heading a{
   color:#111827;
-  font-weight:900;
+  font-weight:600;
   text-decoration:none;
   border-bottom:2px solid var(--gold);
 }
@@ -865,13 +865,13 @@ footer p{
   display:inline-block;
   color:var(--gold);
   font-size:.75rem;
-  font-weight:900;
+  font-weight:600;
   margin-bottom:8px;
 }
 
 .home-destination-card h4{
   font-size:1.1rem;
-  font-weight:900;
+  font-weight:600;
   margin-bottom:8px;
 }
 
@@ -889,7 +889,7 @@ footer p{
   padding:10px 16px;
   border-radius:999px;
   font-size:.82rem;
-  font-weight:900;
+  font-weight:600;
 }
 
 @media(max-width:575px){
@@ -917,10 +917,80 @@ footer p{
 .footer-credit a{
     color:var(--gold) !important;
     text-decoration:none;
-    font-weight:800;
+    font-weight:600;
     transition:.3s ease;
 }
 
 .footer-credit a:hover{
     color:#ffffff !important;
+}
+.review-flow-section{
+  width:100%;
+  overflow:hidden;
+  background:#07111f;
+  padding:22px 0;
+  border-top:1px solid rgba(255,255,255,.08);
+  border-bottom:1px solid rgba(255,255,255,.08);
+}
+
+.review-flow-track{
+  display:flex;
+  gap:18px;
+  width:max-content;
+  animation: reviewFly 55s linear infinite;
+}
+
+.review-flow-section:hover .review-flow-track{
+  animation-play-state:paused;
+}
+
+.review-card{
+  width:330px;
+  min-height:150px;
+  background:#fff;
+  border-radius:18px;
+  padding:18px;
+  box-shadow:0 14px 35px rgba(0,0,0,.18);
+  flex:0 0 auto;
+}
+
+.review-card h4{
+  font-size:16px;
+  font-weight:800;
+  color:#111;
+  margin-bottom:6px;
+}
+
+.review-stars{
+  color:#ffc107;
+  font-size:14px;
+  margin-bottom:8px;
+}
+
+.review-card p{
+  font-size:14px;
+  line-height:1.6;
+  color:#555;
+  margin:0;
+}
+
+@keyframes reviewFly{
+  from{
+    transform:translateX(-50%);
+  }
+  to{
+    transform:translateX(0);
+  }
+}
+
+@media(max-width:576px){
+  .review-card{
+    width:280px;
+    min-height:150px;
+    padding:16px;
+  }
+
+  .review-flow-track{
+    animation-duration:40s;
+  }
 }

@@ -190,3 +190,62 @@ const revealObserver = new IntersectionObserver((entries) => {
 revealElements.forEach(element => {
   revealObserver.observe(element);
 });
+
+
+// review
+const reviews = [
+  {
+    name: "Malathi",
+    text: "Excellent experience with Beast Holidays. The journey was well organized and the service was highly professional."
+  },
+  {
+    name: "Dr. Ashish Jain",
+    text: "Nice experience with Beast Holidays. They made our trip so comfortable. Special thanks to driver Arun."
+  },
+  {
+    name: "Bharathi Amaran",
+    text: "We went on a 5-day Sabarimala Yatra and the entire travel experience was amazing and extremely comfortable."
+  },
+  {
+    name: "Kiran Mudunuru",
+    text: "Stayed in Ooty for 4 days. The trip was excellent and well organised. Highly recommend Beast Holidays."
+  },
+  {
+    name: "Om Thaker",
+    text: "Wonderful trip with Beast Holidays. Everything was well-organized, smooth and completely stress-free."
+  },
+  {
+    name: "Yogeswari Ponnambalam",
+    text: "Best service and very affordable prices. Our guide and driver Arun Kumar made the experience special."
+  },
+  {
+    name: "Bhuvanaa Suresh",
+    text: "Wonderful experience. Clean vehicle and genuine driver. Safe and secure journey with elders and kids."
+  },
+  {
+    name: "Raja Elangovan",
+    text: "Amazing travel experience. The driver made the travel fun and safe. Planning to book again."
+  },
+  {
+    name: "V Mani Lakshminarayanan",
+    text: "Safe and smooth travel across Tamilnadu and Kerala because of the excellent service provided."
+  },
+  {
+    name: "Rajesh Karanjkar",
+    text: "Wonderful time travelling with Beast Holidays. Vehicle was clean and driver Arun Kumar was experienced."
+  }
+];
+
+const reviewFlowTrack = document.getElementById("reviewFlowTrack");
+
+if (reviewFlowTrack) {
+  const repeatedReviews = [...reviews, ...reviews];
+
+  reviewFlowTrack.innerHTML = repeatedReviews.map(review => `
+    <div class="review-card">
+      <h4>${review.name}</h4>
+      <div class="review-stars">★★★★★</div>
+      <p>${review.text}</p>
+    </div>
+  `).join("");
+}

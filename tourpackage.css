@@ -69,7 +69,7 @@
 
 .tour-section-title{
   font-size:clamp(1.8rem,4vw,3rem);
-  font-weight:800;
+  font-weight:600;
   letter-spacing:-1px;
 }
 
@@ -86,7 +86,7 @@
   color:#111827;
   padding:11px 21px;
   border-radius:999px;
-  font-weight:800;
+  font-weight:600;
   font-size:.9rem;
   transition:.3s ease;
   box-shadow:0 8px 25px rgba(0,0,0,.06);
@@ -156,12 +156,12 @@
   padding:5px 8px;
   border-radius:999px;
   font-size:.65rem;
-  font-weight:800;
+  font-weight:600;
 }
 
 .package-card h3{
   font-size:1.05rem;
-  font-weight:800;
+  font-weight:600;
   margin-bottom:6px;
 }
 
@@ -192,7 +192,7 @@
   padding:9px 15px;
   border-radius:999px;
   font-size:.78rem;
-  font-weight:900;
+  font-weight:600;
   transition:.3s ease;
 }
 
@@ -215,7 +215,7 @@
 }
 
 .package-modal .modal-title{
-  font-weight:800;
+  font-weight:600;
   font-size:1.35rem;
 }
 
@@ -246,12 +246,12 @@
   margin-bottom:22px;
   background:linear-gradient(135deg,var(--gold),var(--orange));
   color:#111827;
-  font-weight:900;
+  font-weight:600;
 }
 
 .modal-subtitle{
   font-size:1rem;
-  font-weight:900;
+  font-weight:600;
   margin-bottom:14px;
 }
 
@@ -271,7 +271,7 @@
 }
 
 .itinerary-day{
-  font-weight:900;
+  font-weight:600;
   color:#111827;
 }
 
@@ -285,7 +285,7 @@
 .package-modal label{
   display:block;
   font-size:.84rem;
-  font-weight:900;
+  font-weight:600;
   margin-bottom:7px;
 }
 
@@ -320,7 +320,7 @@
   padding:12px 14px;
   border-radius:15px;
   font-size:.85rem;
-  font-weight:800;
+  font-weight:600;
   margin-top:14px;
 }
 
@@ -332,7 +332,7 @@
   margin-top:20px;
   background:#111;
   color:#fff;
-  font-weight:900;
+  font-weight:600;
   transition:.3s ease;
 }
 
@@ -477,7 +477,7 @@ body.modal-open .bottom-bar{
 
 .offcanvas-body a.active-mobile{
     color:var(--gold) !important;
-    font-weight:800;
+    font-weight:600;
 }
 
 .offcanvas-body a.active-mobile::before{
@@ -508,7 +508,7 @@ body.modal-open .bottom-bar{
 
 .offcanvas-body a.active-mobile{
     color:var(--gold) !important;
-    font-weight:800 !important;
+    font-weight:600 !important;
 }
 
 .offcanvas-body a.active-mobile::before{
@@ -531,7 +531,7 @@ body.modal-open .bottom-bar{
 .footer-credit a{
     color:var(--gold) !important;
     text-decoration:none;
-    font-weight:800;
+    font-weight:600;
     transition:.3s ease;
 }
 

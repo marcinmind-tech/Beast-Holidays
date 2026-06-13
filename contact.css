@@ -85,7 +85,7 @@
 }
 
 .contact-card h4{
-  font-weight:900;
+  font-weight:600;
   margin-bottom:8px;
 }
 
@@ -103,7 +103,7 @@
 
 .contact-info-box h2{
   font-size:clamp(1.9rem,4vw,3.3rem);
-  font-weight:800;
+  font-weight:600;
   letter-spacing:-1px;
   margin-bottom:18px;
 }
@@ -124,7 +124,7 @@
   display:flex;
   align-items:center;
   gap:12px;
-  font-weight:800;
+  font-weight:600;
   color:#333;
 }
 
@@ -140,7 +140,7 @@
   background:#111;
   color:#fff;
   text-decoration:none;
-  font-weight:900;
+  font-weight:600;
   transition:.3s;
 }
 
@@ -158,7 +158,7 @@
 
 .quick-form h3{
   font-size:1.7rem;
-  font-weight:900;
+  font-weight:600;
 }
 
 .quick-form p{
@@ -168,7 +168,7 @@
 
 .quick-form label{
   display:block;
-  font-weight:900;
+  font-weight:600;
   font-size:.86rem;
   margin-bottom:8px;
 }
@@ -211,7 +211,7 @@
   margin-top:20px;
   background:linear-gradient(135deg,var(--gold),var(--orange));
   color:#111;
-  font-weight:900;
+  font-weight:600;
 }
 
 .contact-cta{
@@ -231,7 +231,7 @@
 
 .contact-cta-box h2{
   font-size:clamp(1.9rem,4vw,3.3rem);
-  font-weight:800;
+  font-weight:600;
   letter-spacing:-1px;
 }
 
@@ -304,7 +304,7 @@
 .footer-credit a{
     color:var(--gold) !important;
     text-decoration:none;
-    font-weight:800;
+    font-weight:600;
     transition:.3s ease;
 }
 

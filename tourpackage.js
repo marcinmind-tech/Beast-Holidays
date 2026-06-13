@@ -3,284 +3,640 @@ const WHATSAPP_NUMBER = "917708642784";
 const packages = {
   "1D": [
     {
-      id:"isha-marudhamalai",
-      title:"Isha + Marudhamalai",
-      route:"Coimbatore → Perur → Isha → Marudhamalai → Coimbatore",
-      duration:"1 Day",
-      image:"images/isha.webp",
-      badges:["Spiritual","Family"],
-      itinerary:[
-        { day:"Day 1", text:"Visit Perur Patteswarar Temple, Isha Yoga Center, Adiyogi and Marudhamalai Temple before returning to Coimbatore." }
+      "id": "isha-marudhamalai",
+      "title": "Isha + Marudhamalai",
+      "route": "Coimbatore → Isha → Marudhamalai → Coimbatore",
+      "duration": "1 Day",
+      "image": "images/isha.webp",
+      "badges": ["Pilgrimage", "Family"],
+      "itinerary": [
+        { "day": "Day 1", "text": "Visit Perur Patteswarar Temple, Isha Yoga Center, and Marudhamalai." }
       ]
     },
     {
-      id:"ooty-1d",
-      title:"Ooty One Day Trip",
-      route:"Coimbatore → Ooty → Coimbatore",
-      duration:"1 Day",
-      image:"images/ooty.webp",
-      badges:["Hill Station","Bestseller"],
-      itinerary:[
-        { day:"Day 1", text:"Cover Doddabetta Peak, Ooty Lake, Botanical Garden, Rose Garden, Tea Factory and Chocolate Museum." }
+      "id": "ooty",
+      "title": "Ooty",
+      "route": "Coimbatore → Ooty → Coimbatore",
+      "duration": "1 Day",
+      "image": "images/ooty.webp",
+      "badges": ["Hill Station", "Family"],
+      "itinerary": [
+        { "day": "Day 1", "text": "Doddabetta Peak, Ooty Lake, Botanical Garden, Rose Garden, Tea Factory and Chocolate Museum." }
       ]
     },
     {
-      id:"topslip-masani",
-      title:"Top Slip + Masani Amman",
-      route:"Coimbatore → Top Slip → Masani Amman → Coimbatore",
-      duration:"1 Day",
-      image:"images/top-slip.webp",
-      badges:["Nature","Temple"],
-      itinerary:[
-        { day:"Day 1", text:"Visit Top Slip, Parambikulam region and Masani Amman Temple before returning to Coimbatore." }
+      "id": "top-slip-masani-amman",
+      "title": "Top Slip + Masani Amman",
+      "route": "Coimbatore → Top Slip → Masani Amman → Coimbatore",
+      "duration": "1 Day",
+      "image": "images/top-slip.webp",
+      "badges": ["Nature", "Temple"],
+      "itinerary": [
+        { "day": "Day 1", "text": "Visit Top Slip, Parambikulam and Masani Amman Temple." }
       ]
     },
     {
-      id:"palani",
-      title:"Palani Temple",
-      route:"Coimbatore → Palani → Coimbatore",
-      duration:"1 Day",
-      image:"images/palani.webp",
-      badges:["Pilgrimage","Temple"],
-      itinerary:[
-        { day:"Day 1", text:"Travel from Coimbatore to Palani, visit Palani Murugan Temple and return to Coimbatore." }
+      "id": "guruvayur",
+      "title": "Guruvayur",
+      "route": "Coimbatore → Guruvayur → Coimbatore",
+      "duration": "1 Day",
+      "image": "images/guruvayur.webp",
+      "badges": ["Temple", "Kerala"],
+      "itinerary": [
+        { "day": "Day 1", "text": "Visit Guruvayur Krishna Temple, Punnathur Kotta, Mammiyur Sri Mahadeva Temple and Chavakkad Beach." }
+      ]
+    },
+    {
+      "id": "palani",
+      "title": "Palani",
+      "route": "Coimbatore → Palani → Coimbatore",
+      "duration": "1 Day",
+      "image": "images/palani.webp",
+      "badges": ["Pilgrimage", "Temple"],
+      "itinerary": [
+        { "day": "Day 1", "text": "Coimbatore to Palani, Palani Murugan Temple and back to Coimbatore." }
       ]
     }
   ],
 
   "2D": [
     {
-      id:"ooty-2d",
-      title:"Ooty + Coonoor",
-      route:"Coimbatore → Ooty → Coonoor → Coimbatore",
-      duration:"2 Days / 1 Night",
-      image:"images/ooty.webp",
-      badges:["Hill Station","Family"],
-      itinerary:[
-        { day:"Day 1", text:"Coimbatore to Ooty. Visit Doddabetta Peak, Tea Factory and Botanical Garden. Stay at Ooty." },
-        { day:"Day 2", text:"Visit Rose Garden, Ooty Lake, Thread Garden, Wax Museum, Ketti Valley View, Sims Park, Dolphin’s Nose and Lamb’s Rock. Return to Coimbatore." }
+      "id": "ooty-2d",
+      "title": "Ooty",
+      "route": "Coimbatore → Ooty → Coonoor → Coimbatore",
+      "duration": "2 Days / 1 Night",
+      "image": "images/ooty.webp",
+      "badges": ["Hill Station", "Family"],
+      "itinerary": [
+        { "day": "Day 1", "text": "Coimbatore to Ooty, Doddabetta Peak, Tea Factory, Botanical Garden. Stay at Ooty." },
+        { "day": "Day 2", "text": "Ooty to Rose Garden, Lake, Thread Garden, Wax Museum, Coonoor, Ketti Valley View, MRC Military Camp outside view, Sims Park, Dolphin’s Nose, Lamb’s Rock and back to Coimbatore." }
       ]
     },
     {
-      id:"valparai-2d",
-      title:"Valparai",
-      route:"Coimbatore → Valparai → Coimbatore",
-      duration:"2 Days / 1 Night",
-      image:"images/valparai.webp",
-      badges:["Tea Estates","Nature"],
-      itinerary:[
-        { day:"Day 1", text:"Visit Eachanari Temple, Masani Amman Temple, Aliyar Dam and Monkey Falls on the way to Valparai. Stay at Valparai." },
-        { day:"Day 2", text:"Cover Balaji Temple, Sholayar Dam, tea estates and viewpoints before returning to Coimbatore." }
+      "id": "valparai-2d",
+      "title": "Valparai",
+      "route": "Coimbatore → Valparai → Coimbatore",
+      "duration": "2 Days / 1 Night",
+      "image": "images/valparai.webp",
+      "badges": ["Tea Estates", "Nature"],
+      "itinerary": [
+        { "day": "Day 1", "text": "Coimbatore to Valparai, on the way Eachanari Temple, Masani Amman Temple, Aliyar Dam and Monkey Falls. Stay at Valparai." },
+        { "day": "Day 2", "text": "Balaji Temple, Sholayar Dam, Valparai Tea Estate, Valparai viewpoints and back to Coimbatore." }
       ]
     },
     {
-      id:"kodaikanal-2d",
-      title:"Kodaikanal",
-      route:"Coimbatore → Kodaikanal → Coimbatore",
-      duration:"2 Days / 1 Night",
-      image:"images/kodaikanal.webp",
-      badges:["Hill Station","Couple"],
-      itinerary:[
-        { day:"Day 1", text:"Visit Silver Cascade Falls, Kodaikanal Lake and Coaker’s Walk. Stay at Kodaikanal." },
-        { day:"Day 2", text:"Visit Guna Cave, Dolphin’s Nose, Echo Point, Pillar Rocks, Bryant Park, Green Valley View and Kurinji Andavar Temple. Return to Coimbatore." }
+      "id": "kodaikanal-2d",
+      "title": "Kodaikanal",
+      "route": "Coimbatore → Kodaikanal → Coimbatore",
+      "duration": "2 Days / 1 Night",
+      "image": "images/kodaikanal.webp",
+      "badges": ["Hill Station", "Couple"],
+      "itinerary": [
+        { "day": "Day 1", "text": "Coimbatore to Kodaikanal, Silver Cascade Falls, Kodaikanal Lake, Coaker’s Walk. Stay at Kodaikanal." },
+        { "day": "Day 2", "text": "Guna Cave, Dolphin’s Nose, Echo Point, Pillar Rocks, Bryant Park, Green Valley View, Kurinji Andavar Temple and back to Coimbatore." }
       ]
     },
     {
-      id:"munnar-2d",
-      title:"Munnar",
-      route:"Coimbatore → Munnar → Coimbatore",
-      duration:"2 Days / 1 Night",
-      image:"images/munnar.webp",
-      badges:["Kerala","Tea Gardens"],
-      itinerary:[
-        { day:"Day 1", text:"Travel to Munnar via Chinnar Wildlife Sanctuary, Lakkam Waterfalls and Eravikulam National Park. Stay at Munnar." },
-        { day:"Day 2", text:"Visit Rose Garden, Elephant Safari, Mattupetty Dam, Tea Garden, Echo Point and Top Station. Return to Coimbatore." }
+      "id": "munnar-2d",
+      "title": "Munnar",
+      "route": "Coimbatore → Munnar → Coimbatore",
+      "duration": "2 Days / 1 Night",
+      "image": "images/munnar.webp",
+      "badges": ["Kerala", "Tea Gardens"],
+      "itinerary": [
+        { "day": "Day 1", "text": "Coimbatore to Munnar, Chinnar Wildlife Sanctuary, Lakkam Waterfalls, Eravikulam National Park. Stay at Munnar." },
+        { "day": "Day 2", "text": "Rose Garden, Elephant Safari, Mattupatty Dam, Tea Garden, Echo Point, Top Station and back to Coimbatore." }
+      ]
+    },
+    {
+      "id": "mysore-2d",
+      "title": "Mysore",
+      "route": "Coimbatore → Mysore → Coimbatore",
+      "duration": "2 Days / 1 Night",
+      "image": "images/mysore.webp",
+      "badges": ["Heritage", "Family"],
+      "itinerary": [
+        { "day": "Day 1", "text": "Coimbatore to Mysore, Mysore Palace, Jaganmohan Palace, St. Philomena’s Church, Lalith Mahal Palace and Mysore Zoo. Stay at Mysore." },
+        { "day": "Day 2", "text": "Chamundeshwari Temple, Rail Museum, Brindavan Gardens and back to Coimbatore." }
+      ]
+    },
+    {
+      "id": "malampuzha-guruvayur-2d",
+      "title": "Malampuzha Dam + Guruvayur",
+      "route": "Coimbatore → Malampuzha → Guruvayur → Coimbatore",
+      "duration": "2 Days / 1 Night",
+      "image": "images/guruvayur.webp",
+      "badges": ["Temple", "Kerala"],
+      "itinerary": [
+        { "day": "Day 1", "text": "Coimbatore to Punnathur Kotta, Mammiyur Sri Mahadeva Temple and Malampuzha Dam. Stay at Guruvayur." },
+        { "day": "Day 2", "text": "Guruvayur Krishna Temple, Chavakkad Beach and back to Coimbatore." }
+      ]
+    },
+    {
+      "id": "sabarimalai-2d",
+      "title": "Sabarimalai",
+      "route": "Coimbatore → Sabarimalai → Coimbatore",
+      "duration": "2 Days / 1 Night",
+      "image": "images/sabarimalai.webp",
+      "badges": ["Pilgrimage", "Temple"],
+      "itinerary": [
+        { "day": "Day 1", "text": "Coimbatore to Pamba, Sabarimalai. Stay at Sabarimalai." },
+        { "day": "Day 2", "text": "Sabarimalai, Erumeli and back to Coimbatore." }
+      ]
+    },
+    {
+      "id": "rameshwaram-2d",
+      "title": "Rameshwaram",
+      "route": "Coimbatore → Rameshwaram → Coimbatore",
+      "duration": "2 Days / 1 Night",
+      "image": "images/rameswaram.webp",
+      "badges": ["Temple", "Pilgrimage"],
+      "itinerary": [
+        { "day": "Day 1", "text": "Coimbatore to Rameshwaram Temple. Stay at Rameswaram." },
+        { "day": "Day 2", "text": "Dhanushkodi, APJ Memorial Museum, Pamban Bridge and back to Coimbatore." }
+      ]
+    },
+    {
+      "id": "thiruchendur-2d",
+      "title": "Thiruchendur",
+      "route": "Coimbatore → Thiruchendur → Coimbatore",
+      "duration": "2 Days / 1 Night",
+      "image": "images/thiruchendur.webp",
+      "badges": ["Temple", "Pilgrimage"],
+      "itinerary": [
+        { "day": "Day 1", "text": "Coimbatore to Thiruchendur Temple. Stay at Thiruchendur." },
+        { "day": "Day 2", "text": "Temple visit and back to Coimbatore." }
+      ]
+    },
+    {
+      "id": "thiruvannamalai-2d",
+      "title": "Thiruvannamalai",
+      "route": "Coimbatore → Thiruvannamalai → Coimbatore",
+      "duration": "2 Days / 1 Night",
+      "image": "images/thiruvannamalai.webp",
+      "badges": ["Temple", "Pilgrimage"],
+      "itinerary": [
+        { "day": "Day 1", "text": "Coimbatore to Thiruvannamalai, Thiruvannamalai Girivalam. Stay at Thiruvannamalai." },
+        { "day": "Day 2", "text": "Temple darshan and back to Coimbatore." }
       ]
     }
   ],
 
   "3D": [
     {
-      id:"ooty-3d",
-      title:"Ooty Complete",
-      route:"Coimbatore → Ooty → Coonoor → Coimbatore",
-      duration:"3 Days / 2 Nights",
-      image:"images/ooty.webp",
-      badges:["Bestseller","Hills"],
-      itinerary:[
-        { day:"Day 1", text:"Visit Doddabetta Peak, Tea Factory and Botanical Garden. Stay at Ooty." },
-        { day:"Day 2", text:"Visit Pine Forest, Kamarajar Dam, Shooting Spot, Pykara Waterfalls and Pykara Lake. Stay at Ooty." },
-        { day:"Day 3", text:"Visit Rose Garden, Ooty Lake, Thread Garden, Wax Museum, Ketti Valley View, Sims Park, Dolphin’s Nose and Lamb’s Rock. Return to Coimbatore." }
+      "id": "ooty-3d",
+      "title": "Ooty",
+      "route": "Coimbatore → Ooty → Coonoor → Coimbatore",
+      "duration": "3 Days / 2 Nights",
+      "image": "images/ooty.webp",
+      "badges": ["Bestseller", "Hills"],
+      "itinerary": [
+        { "day": "Day 1", "text": "Coimbatore to Ooty, Doddabetta Peak, Tea Factory, Botanical Garden. Stay at Ooty." },
+        { "day": "Day 2", "text": "Pine Forest, Kamarajar Dam outside view, 6th Mile, 9th Mile Shooting Spot, Pykara Waterfalls and Pykara Lake. Stay at Ooty." },
+        { "day": "Day 3", "text": "Rose Garden, Ooty Lake, Thread Garden, Wax Museum, Coonoor, Ketti Valley View, Sims Park, Dolphin’s Nose, Lamb’s Rock and back to Coimbatore." }
       ]
     },
     {
-      id:"kodaikanal-3d",
-      title:"Kodaikanal Complete",
-      route:"Coimbatore → Kodaikanal → Coimbatore",
-      duration:"3 Days / 2 Nights",
-      image:"images/kodaikanal.webp",
-      badges:["Hill Station","Family"],
-      itinerary:[
-        { day:"Day 1", text:"Coimbatore to Palani Murugan Temple, then to Kodaikanal. Visit Lake and Coaker’s Walk. Stay at Kodaikanal." },
-        { day:"Day 2", text:"Visit Pillar Rocks, Bryant Park, Guna Cave and Green Valley View. Stay at Kodaikanal." },
-        { day:"Day 3", text:"Visit Chettiar Park, Kurinji Andavar Temple, Silver Cascade Falls and return to Coimbatore." }
+      "id": "kodaikanal-3d",
+      "title": "Kodaikanal",
+      "route": "Coimbatore → Kodaikanal → Coimbatore",
+      "duration": "3 Days / 2 Nights",
+      "image": "images/kodaikanal.webp",
+      "badges": ["Hill Station", "Family"],
+      "itinerary": [
+        { "day": "Day 1", "text": "Coimbatore to Palani Murugan Temple, Palani to Kodaikanal, Lake and Coaker’s Walk. Stay at Kodaikanal." },
+        { "day": "Day 2", "text": "Pillar Rocks, Bryant Park, Guna Cave, Green Valley View. Stay at Kodaikanal." },
+        { "day": "Day 3", "text": "Chettiar Park, Kurinji Andavar Temple, Silver Cascade Falls and back to Coimbatore." }
       ]
     },
     {
-      id:"munnar-3d",
-      title:"Munnar Complete",
-      route:"Coimbatore → Munnar → Coimbatore",
-      duration:"3 Days / 2 Nights",
-      image:"images/munnar.webp",
-      badges:["Kerala","Nature"],
-      itinerary:[
-        { day:"Day 1", text:"Visit Chinnar Wildlife Sanctuary, Lakkam Waterfalls and Eravikulam National Park. Stay at Munnar." },
-        { day:"Day 2", text:"Visit Rose Garden, Elephant Safari, Mattupetty Dam, Tea Garden, Echo Point and Top Station. Stay at Munnar." },
-        { day:"Day 3", text:"Visit Kalari/Kathakali show, Attukad Waterfalls, Pothamedu Viewpoint and Spice Garden. Return to Coimbatore." }
+      "id": "munnar-3d",
+      "title": "Munnar",
+      "route": "Coimbatore → Munnar → Coimbatore",
+      "duration": "3 Days / 2 Nights",
+      "image": "images/munnar.webp",
+      "badges": ["Kerala", "Nature"],
+      "itinerary": [
+        { "day": "Day 1", "text": "Coimbatore to Munnar, Chinnar Wildlife Sanctuary, Lakkam Waterfalls, Eravikulam National Park. Stay at Munnar." },
+        { "day": "Day 2", "text": "Rose Garden, Elephant Safari, Mattupatty Dam, Tea Garden, Echo Point and Top Station. Stay at Munnar." },
+        { "day": "Day 3", "text": "Kalari and Kathakali live performance show, Attukadu Waterfalls, Pothamedu Viewpoint, Spice Garden and back to Coimbatore." }
       ]
     },
     {
-      id:"wayanad-3d",
-      title:"Wayanad",
-      route:"Coimbatore → Wayanad → Coimbatore",
-      duration:"3 Days / 2 Nights",
-      image:"images/wayanad.webp",
-      badges:["Kerala","Wildlife"],
-      itinerary:[
-        { day:"Day 1", text:"Visit Banasura Sagar Dam, Edakkal Cave and Kuruva Island. Stay at Wayanad." },
-        { day:"Day 2", text:"Visit Muthanga Wildlife Sanctuary and nearby nature spots. Stay at Wayanad." },
-        { day:"Day 3", text:"Visit Pookode Lake and Soochipara Waterfalls before returning to Coimbatore." }
+      "id": "wayanad-3d",
+      "title": "Wayanad",
+      "route": "Coimbatore → Wayanad → Coimbatore",
+      "duration": "3 Days / 2 Nights",
+      "image": "images/wayanad.webp",
+      "badges": ["Kerala", "Wildlife"],
+      "itinerary": [
+        { "day": "Day 1", "text": "Coimbatore to Wayanad, Banasura Sagar Dam, Edakkal Cave, Kuruva Island. Stay at Wayanad." },
+        { "day": "Day 2", "text": "Muthunga Wildlife Sanctuary, Pakshipathalam and Pazhassi tourist place. Stay at Wayanad." },
+        { "day": "Day 3", "text": "Pookot Lake, Soochipara Waterfalls and back to Coimbatore." }
+      ]
+    },
+    {
+      "id": "valparai-3d",
+      "title": "Valparai + Athirapally",
+      "route": "Coimbatore → Valparai → Athirapally → Coimbatore",
+      "duration": "3 Days / 2 Nights",
+      "image": "images/athirapally.webp",
+      "badges": ["Waterfalls", "Tea Estates"],
+      "itinerary": [
+        { "day": "Day 1", "text": "Coimbatore to Valparai, Loam's View Point, Monkey Falls, Tea Estates, Tiger Valley and Balaji Temple. Overnight stay." },
+        { "day": "Day 2", "text": "Athirapally Waterfalls, Vazhachal Falls and Charpa Falls." },
+        { "day": "Day 3", "text": "Nallamudi Viewpoint, Chinna Kallar Falls, Valparai sightseeing and back." }
+      ]
+    },
+    {
+      "id": "mysore-coorg-3d",
+      "title": "Mysore + Coorg",
+      "route": "Coimbatore → Coorg → Mysore → Coimbatore",
+      "duration": "3 Days / 2 Nights",
+      "image": "images/coorg.webp",
+      "badges": ["Heritage", "Nature"],
+      "itinerary": [
+        { "day": "Day 1", "text": "Dubare Elephant Camp, Golden Temple and Nisargadhama Forest." },
+        { "day": "Day 2", "text": "Abbey Falls, Coffee Plant, Raja Seat and Mysore halt." },
+        { "day": "Day 3", "text": "Mysore Zoo, Rail Museum, Mysore Palace, Chamundeshwari Temple, Lalith Mahal Palace and back to Coimbatore." }
+      ]
+    },
+    {
+      "id": "navagraha-temple-3d",
+      "title": "Navagraha Temple",
+      "route": "Coimbatore → Thanjavur → Mayiladuthurai → Thirunallaru → Coimbatore",
+      "duration": "3 Days / 2 Nights",
+      "image": "images/navagraha.webp",
+      "badges": ["Temple", "Pilgrimage"],
+      "itinerary": [
+        { "day": "Day 1", "text": "Coimbatore to Thanjavur, Brihadeeswara Temple, Thingalur, Alangudi and Thirunageswaram. Stay at Mayiladuthurai." },
+        { "day": "Day 2", "text": "Suryanar, Kanjanoor, Vaitheeswaran and Thiruvenkadu. Stay at Thirunallaru." },
+        { "day": "Day 3", "text": "Keezhperumpallam, Thirunallaru Sani Bhagavan Temple and back to Coimbatore." }
       ]
     }
   ],
 
   "4D": [
     {
-      id:"ooty-4d",
-      title:"Ooty Leisure",
-      route:"Coimbatore → Coonoor → Ooty → Kotagiri → Coimbatore",
-      duration:"4 Days / 3 Nights",
-      image:"images/ooty.webp",
-      badges:["Hill Station","Leisure"],
-      itinerary:[
-        { day:"Day 1", text:"Visit Coonoor, Ketti Valley View, Sims Park, Dolphin’s Nose, Lamb’s Rock, Rose Garden and Ooty Lake. Stay at Ooty." },
-        { day:"Day 2", text:"Visit Pine Forest, Kamarajar Dam, 9th Mile Shooting Spot, Pykara Waterfalls and Pykara Dam. Stay at Ooty." },
-        { day:"Day 3", text:"Visit Doddabetta Peak, Tea Factory and Botanical Garden. Stay at Ooty." },
-        { day:"Day 4", text:"Visit Kotagiri, Catherine Waterfalls and Kodanadu Viewpoint before returning to Coimbatore." }
+      "id": "ooty-4d",
+      "title": "Ooty",
+      "route": "Coimbatore → Coonoor → Ooty → Kotagiri → Coimbatore",
+      "duration": "4 Days / 3 Nights",
+      "image": "images/ooty.webp",
+      "badges": ["Hill Station", "Leisure"],
+      "itinerary": [
+        { "day": "Day 1", "text": "Coimbatore to Coonoor, Ketti Valley View, MRC Military Camp outside view, Sim’s Park, Dolphin’s Nose, Lamb’s Rock, Ooty, Rose Garden, Lake, Thread Garden and Wax Museum. Stay at Ooty." },
+        { "day": "Day 2", "text": "Pine Forest, Kamarajar Dam, Tree Garden, 9th Mile Shooting Spot, Pykara Waterfalls and Pykara Dam. Stay at Ooty." },
+        { "day": "Day 3", "text": "Doddabetta Peak, Tea Factory and Botanical Garden. Stay at Ooty." },
+        { "day": "Day 4", "text": "Ooty to Kotagiri, Catherine Waterfalls, Kodanadu Viewpoint and back to Coimbatore." }
       ]
     },
     {
-      id:"munnar-thekkady-4d",
-      title:"Munnar + Thekkady",
-      route:"Coimbatore → Munnar → Thekkady → Coimbatore",
-      duration:"4 Days / 3 Nights",
-      image:"images/thekkady.webp",
-      badges:["Kerala","Wildlife"],
-      itinerary:[
-        { day:"Day 1", text:"Travel to Munnar with sightseeing at Lakkam Waterfalls and Eravikulam National Park. Stay at Munnar." },
-        { day:"Day 2", text:"Visit Mattupetty Dam, Rose Garden, Echo Point, tea plantations and Top Station. Stay at Munnar." },
-        { day:"Day 3", text:"Travel to Thekkady. Visit Spice Garden and optional off-road safari. Stay at Thekkady." },
-        { day:"Day 4", text:"Visit Periyar Wildlife Sanctuary and local sightseeing before returning to Coimbatore." }
+      "id": "kodaikanal-4d",
+      "title": "Kodaikanal",
+      "route": "Coimbatore → Kodaikanal → Coimbatore",
+      "duration": "4 Days / 3 Nights",
+      "image": "images/kodaikanal.webp",
+      "badges": ["Hill Station", "Family"],
+      "itinerary": [
+        { "day": "Day 1", "text": "Coimbatore to Palani Andavar Temple, Kodaikanal, Silver Cascade Waterfalls. Stay at Kodaikanal." },
+        { "day": "Day 2", "text": "Kodaikanal Lake, Bryant Park, Coaker’s Walk, Chettiar Park, Kurinji Andavar Temple. Stay at Kodaikanal." },
+        { "day": "Day 3", "text": "Pine Forest, Guna Cave, Pillar Rocks, Green Valley View, Moyer Point and Silent Valley. Stay at Kodaikanal." },
+        { "day": "Day 4", "text": "Back to Coimbatore." }
       ]
     },
     {
-      id:"coorg-wayanad-4d",
-      title:"Coorg + Wayanad",
-      route:"Coimbatore → Coorg → Wayanad → Coimbatore",
-      duration:"4 Days / 3 Nights",
-      image:"images/coorg.webp",
-      badges:["Combo","Nature"],
-      itinerary:[
-        { day:"Day 1", text:"Travel from Coimbatore to Coorg, check-in and relax. Stay at Coorg." },
-        { day:"Day 2", text:"Visit Abbey Falls, Raja’s Seat, Madikeri Fort, Omkareshwara Temple and Nisargadhama. Stay at Coorg." },
-        { day:"Day 3", text:"Travel to Wayanad and visit Edakkal Caves and waterfalls based on time. Stay at Wayanad." },
-        { day:"Day 4", text:"Visit Pookode Lake and Lakkidi View Point before returning to Coimbatore." }
+      "id": "ooty-mysore-4d",
+      "title": "Ooty + Mysore",
+      "route": "Coimbatore → Ooty → Mysore → Coimbatore",
+      "duration": "4 Days / 3 Nights",
+      "image": "images/mysore.webp",
+      "badges": ["Hills", "Heritage"],
+      "itinerary": [
+        { "day": "Day 1", "text": "Coimbatore to Coonoor, Sims Park, Dolphin's Nose, Lamb's Rock, Ooty and Tea Garden. Stay at Ooty." },
+        { "day": "Day 2", "text": "Rose Garden, Botanical Garden, Lake, Doddabetta Peak, Tea Factory, Wax Museum and Karnataka Garden. Stay at Ooty." },
+        { "day": "Day 3", "text": "Ooty checkout, Pine Tree Forest, 9th Mile Shooting Spot, Pykara Waterfalls, Mudumalai or Bandipur Wildlife Safari and Mysore Palace. Stay at Mysore." },
+        { "day": "Day 4", "text": "Mysore Zoo, Chamundeshwari Temple and back to Coimbatore." }
       ]
     },
     {
-      id:"kodaikanal-rameswaram-4d",
-      title:"Kodaikanal + Rameswaram",
-      route:"Coimbatore → Kodaikanal → Rameswaram → Madurai",
-      duration:"4 Days / 3 Nights",
-      image:"images/rameswaram.webp",
-      badges:["Temple","Hills"],
-      itinerary:[
-        { day:"Day 1", text:"Visit Palani Temple, Silver Cascade Falls, Kodaikanal Lake and local sightseeing. Stay at Kodaikanal." },
-        { day:"Day 2", text:"Visit Pine Forest, Guna Cave, Pillar Rocks and Green Valley View. Stay at Kodaikanal." },
-        { day:"Day 3", text:"Travel to Rameswaram, temple darshan and local sightseeing. Stay at Rameswaram." },
-        { day:"Day 4", text:"Travel to Madurai, visit Meenakshi Amman Temple and drop." }
+      "id": "munnarthekkady-4d",
+      "title": "Munnar + Thekkady",
+      "route": "Coimbatore → Munnar → Thekkady → Coimbatore",
+      "duration": "4 Days / 3 Nights",
+      "image": "images/thekkady.webp",
+      "badges": ["Kerala", "Wildlife"],
+      "itinerary": [
+        { "day": "Day 1", "text": "Coimbatore to Munnar, sightseeing at Lakkam Waterfalls and Eravikulam National Park. Stay at Munnar." },
+        { "day": "Day 2", "text": "Mattupatty Dam, Rose Garden, Echo Point, Tea Plantation and Top Station. Stay at Munnar." },
+        { "day": "Day 3", "text": "Kalari and Kathakali live show, Spice Garden and optional off-road safari. Stay at Thekkady." },
+        { "day": "Day 4", "text": "Periyar Wildlife Sanctuary, local sightseeing and back to Coimbatore." }
+      ]
+    },
+    {
+      "id": "coorgchikmagalur-4d",
+      "title": "Coorg + Chikmagalur",
+      "route": "Coimbatore → Coorg → Chikmagalur → Coimbatore",
+      "duration": "4 Days / 3 Nights",
+      "image": "images/chikmagalur.webp",
+      "badges": ["Nature", "Coffee Hills"],
+      "itinerary": [
+        { "day": "Day 1", "text": "Coimbatore to Coorg. Scenic drive, check-in and relax. Stay at Coorg." },
+        { "day": "Day 2", "text": "Abbey Falls, Raja’s Seat, Madikeri Fort, Omkareshwara Temple, optional Dubare Elephant Camp and Cauvery Nisargadhama. Stay at Coorg." },
+        { "day": "Day 3", "text": "Coorg to Chikmagalur. Visit Mullayanagiri Peak, Baba Budangiri and Hirekolale Lake. Stay at Chikmagalur." },
+        { "day": "Day 4", "text": "Optional coffee plantation visit and return drop at Coimbatore." }
+      ]
+    },
+    {
+      "id": "coorgwayanad-4d",
+      "title": "Coorg + Wayanad",
+      "route": "Coimbatore → Coorg → Wayanad → Coimbatore",
+      "duration": "4 Days / 3 Nights",
+      "image": "images/coorg.webp",
+      "badges": ["Nature", "Combo"],
+      "itinerary": [
+        { "day": "Day 1", "text": "Coimbatore to Coorg. Scenic drive, check-in and relax. Stay at Coorg." },
+        { "day": "Day 2", "text": "Abbey Falls, Raja’s Seat, Madikeri Fort, Omkareshwara Temple, optional Dubare Elephant Camp and Cauvery Nisargadhama. Stay at Coorg." },
+        { "day": "Day 3", "text": "Coorg to Wayanad. Visit Edakkal Caves and Soochipara or Meenmutty Falls based on time. Stay at Wayanad." },
+        { "day": "Day 4", "text": "Visit Pookode Lake, Lakkidi View Point and return to Coimbatore." }
+      ]
+    },
+    {
+      "id": "kodaikanal-madurai-rameswaram-4d",
+      "title": "Kodaikanal + Madurai + Rameswaram",
+      "route": "Coimbatore → Kodaikanal → Rameswaram → Madurai",
+      "duration": "4 Days / 3 Nights",
+      "image": "images/rameswaram.webp",
+      "badges": ["Temple", "Hills"],
+      "itinerary": [
+        { "day": "Day 1", "text": "Coimbatore to Palani Murugan Temple, Silver Cascade Waterfalls, Kodaikanal Lake, Bryant Park, Coaker’s Walk, Chettiar Park and Kurinji Andavar Temple. Stay at Kodaikanal." },
+        { "day": "Day 2", "text": "Pine Tree Forest, Guna Cave, Pillar Rocks, Green Valley View, Moyer Point and Silent Valley. Stay at Kodaikanal." },
+        { "day": "Day 3", "text": "Kodaikanal to Rameswaram, temple darshan and local sightseeing. Stay at Rameswaram." },
+        { "day": "Day 4", "text": "Rameswaram to Madurai, Meenakshi Amman Temple and drop at Madurai Railway Station or Airport." }
       ]
     }
   ],
 
   "5D": [
     {
-      id:"ooty-kodaikanal-5d",
-      title:"Ooty + Kodaikanal",
-      route:"Coimbatore → Ooty → Kodaikanal → Coimbatore",
-      duration:"5 Days / 4 Nights",
-      image:"images/ooty-kodaikanal.webp",
-      badges:["Combo","Hill Stations"],
-      itinerary:[
-        { day:"Day 1", text:"Visit Coonoor spots and transfer to Ooty. Stay at Ooty." },
-        { day:"Day 2", text:"Ooty sightseeing including Botanical Garden, Rose Garden, Ooty Lake, Doddabetta, Tea Factory and Wax Museum. Stay at Ooty." },
-        { day:"Day 3", text:"Travel from Ooty to Kodaikanal and enjoy leisure evening. Stay at Kodaikanal." },
-        { day:"Day 4", text:"Visit Pillar Rocks, Bryant Park, Green Valley View, Kurinji Andavar Temple, Guna Cave, Pine Forest and Coaker’s Walk. Stay at Kodaikanal." },
-        { day:"Day 5", text:"Optional shopping or lake visit and return to Coimbatore." }
+      "id": "ooty-5d",
+      "title": "Ooty",
+      "route": "Coimbatore → Ooty → Avalanche → Mudumalai → Coimbatore",
+      "duration": "5 Days / 4 Nights",
+      "image": "images/ooty.webp",
+      "badges": ["Hill Station", "Leisure"],
+      "itinerary": [
+        { "day": "Day 1", "text": "Arrival and Coonoor sightseeing. Visit Sim’s Park, Lamb’s Rock, Dolphin’s Nose, Tea Gardens, then transfer to Ooty and check-in. Stay at Ooty." },
+        { "day": "Day 2", "text": "Ooty sightseeing: Botanical Garden, Rose Garden, Ooty Lake, Thread Garden, Doddabetta Peak, Tea Factory and Museum, Wax Museum. Stay at Ooty." },
+        { "day": "Day 3", "text": "Avalanche sightseeing. Visit Avalanche Lake, Emerald Lake by jeep if required, enjoy nature and return to Ooty. Stay at Ooty." },
+        { "day": "Day 4", "text": "Pykara and Mudumalai. Visit Pykara Lake, Pykara Falls, Mudumalai Wildlife Sanctuary optional safari and return to Ooty. Stay at Ooty." },
+        { "day": "Day 5", "text": "Check-out, optional local shopping and drop at Coimbatore or Mettupalayam." }
       ]
     },
     {
-      id:"munnar-varkala-alleppey-5d",
-      title:"Munnar + Varkala + Alleppey",
-      route:"Coimbatore → Munnar → Varkala → Alleppey → Coimbatore",
-      duration:"5 Days / 4 Nights",
-      image:"images/alleppey.webp",
-      badges:["Kerala","Backwaters"],
-      itinerary:[
-        { day:"Day 1", text:"Travel to Munnar via scenic route and check in. Stay at Munnar." },
-        { day:"Day 2", text:"Visit Mattupetty Dam, Echo Point, Kundala Lake, Tea Museum and Eravikulam National Park. Stay at Munnar." },
-        { day:"Day 3", text:"Transfer to Varkala. Visit Varkala Beach, Cliff and Janardanaswamy Temple. Stay at Varkala." },
-        { day:"Day 4", text:"Transfer to Alleppey, enjoy houseboat/backwater experience. Stay at Alleppey." },
-        { day:"Day 5", text:"Return drop at Coimbatore." }
+      "id": "ooty-kodaikanal-5d",
+      "title": "Ooty + Kodaikanal",
+      "route": "Coimbatore → Ooty → Kodaikanal → Coimbatore",
+      "duration": "5 Days / 4 Nights",
+      "image": "images/ooty-kodaikanal.webp",
+      "badges": ["Combo", "Hill Stations"],
+      "itinerary": [
+        { "day": "Day 1", "text": "Coimbatore to Coonoor and Ooty. Visit Sim’s Park, Lamb’s Rock, Dolphin’s Nose, Tea Gardens, then transfer to Ooty and check-in. Stay at Ooty." },
+        { "day": "Day 2", "text": "Ooty sightseeing: Botanical Garden, Rose Garden, Ooty Lake, Thread Garden, Doddabetta Peak, Tea Factory and Museum, Wax Museum. Stay at Ooty." },
+        { "day": "Day 3", "text": "Ooty to Kodaikanal. Scenic hill drive, check-in and evening leisure. Stay at Kodaikanal." },
+        { "day": "Day 4", "text": "Kodaikanal sightseeing: Pillar Rocks, Bryant Park, Green Valley View, Kurinji Andavar Temple, Silver Cascade Falls, Guna Cave, Pine Forest and Coaker’s Walk. Stay at Kodaikanal." },
+        { "day": "Day 5", "text": "Kodaikanal to Coimbatore. Optional shopping or lake visit and drop at Coimbatore." }
+      ]
+    },
+    {
+      "id": "ooty-mysore-bangalore-5d",
+      "title": "Ooty + Mysore + Bangalore",
+      "route": "Coimbatore → Ooty → Mysore → Bangalore",
+      "duration": "5 Days / 4 Nights",
+      "image": "images/bangalore.webp",
+      "badges": ["Hills", "City"],
+      "itinerary": [
+        { "day": "Day 1", "text": "Coimbatore to Coonoor and Ooty. Visit Sim’s Park, Lamb’s Rock, Dolphin’s Nose, Tea Gardens, then transfer to Ooty and check-in. Stay at Ooty." },
+        { "day": "Day 2", "text": "Ooty sightseeing: Botanical Garden, Rose Garden, Ooty Lake, Thread Garden, Doddabetta Peak, Tea Factory and Museum, Wax Museum. Stay at Ooty." },
+        { "day": "Day 3", "text": "Ooty to Mysore via Pykara. Visit Pykara Lake, Pykara Falls, drive via Mudumalai and Bandipur forest route, check-in. Stay at Mysore." },
+        { "day": "Day 4", "text": "Mysore sightseeing: Mysore Palace, Chamundi Hills, Mysore Zoo, Brindavan Gardens and St. Philomena’s Church. Stay at Mysore." },
+        { "day": "Day 5", "text": "Mysore to Bangalore. Visit Tipu Sultan’s Palace, Lalbagh Botanical Garden, Vidhana Soudha outside view and drop." }
+      ]
+    },
+    {
+      "id": "kodaikanal-munnar-5d",
+      "title": "Kodaikanal + Munnar",
+      "route": "Coimbatore → Munnar → Kodaikanal → Coimbatore",
+      "duration": "5 Days / 4 Nights",
+      "image": "images/kodaikanal-munnar.webp",
+      "badges": ["Hills", "Kerala"],
+      "itinerary": [
+        { "day": "Day 1", "text": "Coimbatore to Munnar. Scenic hill drive via waterfalls, check-in and relax. Stay at Munnar." },
+        { "day": "Day 2", "text": "Munnar sightseeing: Mattupetty Dam, Echo Point, Kundala Lake, Tea Museum and Eravikulam National Park. Stay at Munnar." },
+        { "day": "Day 3", "text": "Munnar to Kodaikanal. Scenic hill drive, check-in and evening leisure or lake visit. Stay at Kodaikanal." },
+        { "day": "Day 4", "text": "Kodaikanal sightseeing: Pillar Rocks, Bryant Park, Green Valley View, Kurinji Andavar Temple, Silver Cascade Falls, Guna Cave, Pine Forest and Coaker’s Walk. Stay at Kodaikanal." },
+        { "day": "Day 5", "text": "Kodaikanal to Coimbatore. Optional shopping or lake visit and drop at Coimbatore." }
+      ]
+    },
+    {
+      "id": "kodaikanal-madurai-rameshwaram-5d",
+      "title": "Kodaikanal + Madurai + Rameshwaram",
+      "route": "Coimbatore → Kodaikanal → Rameshwaram → Madurai → Coimbatore",
+      "duration": "5 Days / 4 Nights",
+      "image": "images/rameswaram.webp",
+      "badges": ["Temple", "Hills"],
+      "itinerary": [
+        { "day": "Day 1", "text": "Coimbatore to Kodaikanal. Scenic hill drive, check-in, visit Kodaikanal Lake and Coaker’s Walk. Stay at Kodaikanal." },
+        { "day": "Day 2", "text": "Kodaikanal sightseeing: Pillar Rocks, Bryant Park, Green Valley View, Kurinji Andavar Temple, Silver Cascade Falls, Guna Cave and Pine Forest. Stay at Kodaikanal." },
+        { "day": "Day 3", "text": "Kodaikanal to Rameswaram. Visit Ramanathaswamy Temple and Pamban Bridge if time permits. Stay at Rameswaram." },
+        { "day": "Day 4", "text": "Rameswaram to Madurai. Visit Dhanushkodi, APJ Abdul Kalam Memorial, proceed to Madurai and visit Meenakshi Amman Temple. Stay at Madurai." },
+        { "day": "Day 5", "text": "Madurai to Coimbatore. Optional Thirumalai Nayakkar Mahal visit and drop at Coimbatore." }
+      ]
+    },
+    {
+      "id": "munnar-varkala-alleppey-5d",
+      "title": "Munnar + Varkala + Alleppey",
+      "route": "Coimbatore → Munnar → Varkala → Alleppey → Coimbatore",
+      "duration": "5 Days / 4 Nights",
+      "image": "images/alleppey.webp",
+      "badges": ["Kerala", "Backwaters"],
+      "itinerary": [
+        { "day": "Day 1", "text": "Coimbatore to Munnar. Scenic hill drive via Valara Falls and Cheeyappara Falls, check-in and relax. Stay at Munnar." },
+        { "day": "Day 2", "text": "Munnar sightseeing: Mattupetty Dam, Echo Point, Kundala Lake, Tea Museum and Eravikulam National Park. Stay at Munnar." },
+        { "day": "Day 3", "text": "Munnar to Varkala. Visit Varkala Beach, Cliff, Janardanaswamy Temple and leisure time at beach. Stay at Varkala." },
+        { "day": "Day 4", "text": "Varkala to Alleppey. Houseboat check-in, backwater cruise experience and overnight stay. Stay at Alleppey." },
+        { "day": "Day 5", "text": "Alleppey to Coimbatore. Check-out and return drop at Coimbatore." }
       ]
     }
   ],
 
   "6D": [
     {
-      id:"ooty-kodaikanal-madurai-6d",
-      title:"Ooty + Kodaikanal + Madurai",
-      route:"Coimbatore → Ooty → Kodaikanal → Madurai → Coimbatore",
-      duration:"6 Days / 5 Nights",
-      image:"images/madurai.webp",
-      badges:["Family","Temple","Hills"],
-      itinerary:[
-        { day:"Day 1", text:"Visit Isha Yoga Center, Coonoor sightseeing and transfer to Ooty. Stay at Ooty." },
-        { day:"Day 2", text:"Ooty sightseeing covering Botanical Garden, Rose Garden, Ooty Lake, Doddabetta and Tea Factory. Stay at Ooty." },
-        { day:"Day 3", text:"Travel from Ooty to Kodaikanal. Stay at Kodaikanal." },
-        { day:"Day 4", text:"Kodaikanal sightseeing including Pillar Rocks, Bryant Park, Guna Cave, Pine Forest and Coaker’s Walk. Stay at Kodaikanal." },
-        { day:"Day 5", text:"Travel to Madurai. Visit Meenakshi Amman Temple and Thirumalai Nayakkar Mahal. Stay at Madurai." },
-        { day:"Day 6", text:"Madurai local sightseeing and return to Coimbatore." }
+      "id": "ooty-kodaikanal-madurai-6d",
+      "title": "Ooty + Kodaikanal + Madurai",
+      "route": "Coimbatore → Ooty → Kodaikanal → Madurai",
+      "duration": "6 Days / 5 Nights",
+      "image": "images/madurai.webp",
+      "badges": ["Family", "Temple", "Hills"],
+      "itinerary": [
+        { "day": "Day 1", "text": "Coimbatore to Isha and Coonoor to Ooty. Visit Isha Yoga Center, Sim’s Park, Lamb’s Rock, Dolphin’s Nose, Tea Gardens, then transfer to Ooty and check-in. Stay at Ooty." },
+        { "day": "Day 2", "text": "Ooty sightseeing: Botanical Garden, Rose Garden, Ooty Lake, Thread Garden, Doddabetta Peak, Tea Factory and Museum, Wax Museum. Stay at Ooty." },
+        { "day": "Day 3", "text": "Ooty to Kodaikanal. Scenic hill drive, check-in and evening leisure. Stay at Kodaikanal." },
+        { "day": "Day 4", "text": "Kodaikanal sightseeing: Pillar Rocks, Bryant Park, Green Valley View, Kurinji Andavar Temple, Silver Cascade Falls, Guna Cave, Pine Forest and Coaker’s Walk. Stay at Kodaikanal." },
+        { "day": "Day 5", "text": "Kodaikanal to Madurai. Visit Meenakshi Amman Temple, Thirumalai Nayakkar Mahal and evening shopping. Stay at Madurai." },
+        { "day": "Day 6", "text": "Madurai sightseeing. Visit Gandhi Memorial Museum, local markets and drop at Coimbatore or Madurai." }
+      ]
+    },
+    {
+      "id": "kodaikanal-ooty-mysore-6d",
+      "title": "Kodaikanal + Ooty + Mysore",
+      "route": "Coimbatore → Kodaikanal → Ooty → Mysore → Coimbatore",
+      "duration": "6 Days / 5 Nights",
+      "image": "images/mysore.webp",
+      "badges": ["Hills", "Heritage"],
+      "itinerary": [
+        { "day": "Day 1", "text": "Coimbatore to Palani Murugan Temple, Kodaikanal and Silver Cascade Waterfalls. Stay at Kodaikanal." },
+        { "day": "Day 2", "text": "Pine Tree Forest, Guna Cave, Pillar Rocks, Moyer Point, Kurinji Andavar Temple, Rose Garden and Dolphin’s Nose. Stay at Kodaikanal." },
+        { "day": "Day 3", "text": "Kodaikanal to Coonoor, Coonoor local sightseeing and transfer to Ooty. Stay at Ooty." },
+        { "day": "Day 4", "text": "Rose Garden, Botanical Garden, Lake, Doddabetta Peak, Tea Factory and Wax Museum. Stay at Ooty." },
+        { "day": "Day 5", "text": "Pine Tree Forest, 9th Mile Shooting Spot, Pykara Waterfalls, Pykara Dam, Kamarajar Dam, Mudumalai National Park and Mysore. Stay at Mysore." },
+        { "day": "Day 6", "text": "Mysore Zoo, Mysore Palace, Chamundeshwari Temple and back to Coimbatore." }
+      ]
+    },
+    {
+      "id": "ooty-coorg-mysore-bangalore-6d",
+      "title": "Ooty + Coorg + Mysore + Bangalore",
+      "route": "Coimbatore → Ooty → Coorg → Mysore → Bangalore",
+      "duration": "6 Days / 5 Nights",
+      "image": "images/bangalore.webp",
+      "badges": ["Hills", "City"],
+      "itinerary": [
+        { "day": "Day 1", "text": "Coimbatore to Ooty via Coonoor sightseeing. Stay at Ooty." },
+        { "day": "Day 2", "text": "Ooty local sightseeing including gardens, lake, viewpoints and tea factory. Stay at Ooty." },
+        { "day": "Day 3", "text": "Ooty to Coorg via scenic route. Check-in and relax. Stay at Coorg." },
+        { "day": "Day 4", "text": "Coorg sightseeing including Abbey Falls, Raja’s Seat, Madikeri Fort and Omkareshwara Temple. Stay at Coorg." },
+        { "day": "Day 5", "text": "Coorg to Mysore. Visit Mysore Palace, Chamundi Hills and Brindavan Gardens. Stay at Mysore." },
+        { "day": "Day 6", "text": "Mysore to Bangalore sightseeing and drop." }
+      ]
+    },
+    {
+      "id": "munnar-alleppey-varkala-kovalam-trivandrum-6d",
+      "title": "Munnar + Alleppey + Varkala + Kovalam + Trivandrum",
+      "route": "Coimbatore → Munnar → Alleppey → Varkala → Kovalam → Trivandrum",
+      "duration": "6 Days / 5 Nights",
+      "image": "images/kovalam.webp",
+      "badges": ["Kerala", "Beaches"],
+      "itinerary": [
+        { "day": "Day 1", "text": "Coimbatore to Munnar. Scenic hill drive and check-in. Stay at Munnar." },
+        { "day": "Day 2", "text": "Munnar sightseeing including Mattupetty Dam, Echo Point, Tea Museum and Eravikulam National Park. Stay at Munnar." },
+        { "day": "Day 3", "text": "Munnar to Alleppey. Enjoy backwater experience and stay." },
+        { "day": "Day 4", "text": "Alleppey to Varkala. Visit Varkala Beach, cliff and temple. Stay at Varkala." },
+        { "day": "Day 5", "text": "Varkala to Kovalam. Visit beaches and leisure time. Stay at Kovalam." },
+        { "day": "Day 6", "text": "Trivandrum sightseeing and drop." }
+      ]
+    },
+    {
+      "id": "ooty-wayanad-coorg-6d",
+      "title": "Ooty + Wayanad + Coorg",
+      "route": "Coimbatore → Ooty → Wayanad → Coorg → Coimbatore",
+      "duration": "6 Days / 5 Nights",
+      "image": "images/wayanad.webp",
+      "badges": ["Nature", "Combo"],
+      "itinerary": [
+        { "day": "Day 1", "text": "Coimbatore to Ooty, Coonoor sightseeing and Ooty check-in. Stay at Ooty." },
+        { "day": "Day 2", "text": "Ooty local sightseeing including gardens, lake, Doddabetta and tea factory. Stay at Ooty." },
+        { "day": "Day 3", "text": "Ooty to Wayanad via scenic route. Stay at Wayanad." },
+        { "day": "Day 4", "text": "Wayanad sightseeing including Edakkal Caves, waterfalls and viewpoints. Stay at Wayanad." },
+        { "day": "Day 5", "text": "Wayanad to Coorg. Visit Coorg local places and stay." },
+        { "day": "Day 6", "text": "Coorg sightseeing and return to Coimbatore." }
       ]
     }
   ],
 
   "7D": [
     {
-      id:"ooty-kodaikanal-munnar-7d",
-      title:"Ooty + Kodaikanal + Munnar",
-      route:"Coimbatore → Ooty → Kodaikanal → Munnar → Coimbatore",
-      duration:"7 Days / 6 Nights",
-      image:"images/munnar.webp",
-      badges:["Full Vacation","Premium"],
-      itinerary:[
-        { day:"Day 1", text:"Coimbatore pickup, Coonoor sightseeing and transfer to Ooty. Stay at Ooty." },
-        { day:"Day 2", text:"Ooty local sightseeing including Botanical Garden, Rose Garden, Ooty Lake and Doddabetta. Stay at Ooty." },
-        { day:"Day 3", text:"Pykara, Pine Forest and Shooting Point sightseeing. Stay at Ooty." },
-        { day:"Day 4", text:"Travel from Ooty to Kodaikanal. Stay at Kodaikanal." },
-        { day:"Day 5", text:"Kodaikanal sightseeing including Pillar Rocks, Bryant Park, Guna Cave and Coaker’s Walk. Stay at Kodaikanal." },
-        { day:"Day 6", text:"Travel from Kodaikanal to Munnar. Stay at Munnar." },
-        { day:"Day 7", text:"Munnar sightseeing and return to Coimbatore." }
+      "id": "ooty-kodaikanal-munnar-7d",
+      "title": "Ooty + Kodaikanal + Munnar",
+      "route": "Coimbatore → Ooty → Kodaikanal → Munnar → Coimbatore",
+      "duration": "7 Days / 6 Nights",
+      "image": "images/munnar.webp",
+      "badges": ["Full Vacation", "Premium"],
+      "itinerary": [
+        { "day": "Day 1", "text": "Coimbatore pickup, Coonoor sightseeing and transfer to Ooty. Stay at Ooty." },
+        { "day": "Day 2", "text": "Ooty local sightseeing including Botanical Garden, Rose Garden, Ooty Lake and Doddabetta. Stay at Ooty." },
+        { "day": "Day 3", "text": "Pykara, Pine Forest and Shooting Point sightseeing. Stay at Ooty." },
+        { "day": "Day 4", "text": "Travel from Ooty to Kodaikanal. Stay at Kodaikanal." },
+        { "day": "Day 5", "text": "Kodaikanal sightseeing including Pillar Rocks, Bryant Park, Guna Cave and Coaker’s Walk. Stay at Kodaikanal." },
+        { "day": "Day 6", "text": "Travel from Kodaikanal to Munnar. Stay at Munnar." },
+        { "day": "Day 7", "text": "Munnar sightseeing and return to Coimbatore." }
+      ]
+    },
+    {
+      "id": "ooty-kodaikanal-madurai-rameswaram-7d",
+      "title": "Ooty + Kodaikanal + Madurai + Rameswaram",
+      "route": "Coimbatore → Ooty → Kodaikanal → Madurai → Rameswaram",
+      "duration": "7 Days / 6 Nights",
+      "image": "images/rameswaram.webp",
+      "badges": ["Temple", "Hills"],
+      "itinerary": [
+        { "day": "Day 1", "text": "Coimbatore to Ooty via Coonoor sightseeing. Stay at Ooty." },
+        { "day": "Day 2", "text": "Ooty local sightseeing including gardens, lake, Doddabetta and tea factory. Stay at Ooty." },
+        { "day": "Day 3", "text": "Ooty to Kodaikanal. Scenic drive and evening leisure. Stay at Kodaikanal." },
+        { "day": "Day 4", "text": "Kodaikanal sightseeing including Pillar Rocks, Guna Cave, Pine Forest and Coaker’s Walk. Stay at Kodaikanal." },
+        { "day": "Day 5", "text": "Kodaikanal to Madurai. Visit Meenakshi Amman Temple and local places. Stay at Madurai." },
+        { "day": "Day 6", "text": "Madurai to Rameswaram. Temple darshan and local sightseeing. Stay at Rameswaram." },
+        { "day": "Day 7", "text": "Dhanushkodi, Pamban Bridge, APJ Memorial and drop." }
+      ]
+    },
+    {
+      "id": "ooty-mysore-coorg-bangalore-7d",
+      "title": "Ooty + Mysore + Coorg + Bangalore",
+      "route": "Coimbatore → Ooty → Mysore → Coorg → Bangalore",
+      "duration": "7 Days / 6 Nights",
+      "image": "images/coorg.webp",
+      "badges": ["Hills", "Heritage"],
+      "itinerary": [
+        { "day": "Day 1", "text": "Coimbatore to Ooty via Coonoor sightseeing. Stay at Ooty." },
+        { "day": "Day 2", "text": "Ooty local sightseeing. Stay at Ooty." },
+        { "day": "Day 3", "text": "Ooty to Mysore via Pykara and forest route. Stay at Mysore." },
+        { "day": "Day 4", "text": "Mysore sightseeing including palace, zoo, Chamundi Hills and Brindavan Gardens. Stay at Mysore." },
+        { "day": "Day 5", "text": "Mysore to Coorg. Visit local Coorg places. Stay at Coorg." },
+        { "day": "Day 6", "text": "Coorg sightseeing including Abbey Falls, Raja’s Seat and Madikeri. Stay at Coorg." },
+        { "day": "Day 7", "text": "Coorg to Bangalore sightseeing and drop." }
+      ]
+    },
+    {
+      "id": "kodaikanal-ooty-mysore-bangalore-7d",
+      "title": "Kodaikanal + Ooty + Mysore + Bangalore",
+      "route": "Coimbatore → Kodaikanal → Ooty → Mysore → Bangalore",
+      "duration": "7 Days / 6 Nights",
+      "image": "images/bangalore.webp",
+      "badges": ["Hills", "City"],
+      "itinerary": [
+        { "day": "Day 1", "text": "Coimbatore to Kodaikanal via Palani. Stay at Kodaikanal." },
+        { "day": "Day 2", "text": "Kodaikanal local sightseeing. Stay at Kodaikanal." },
+        { "day": "Day 3", "text": "Kodaikanal to Ooty. Stay at Ooty." },
+        { "day": "Day 4", "text": "Ooty local sightseeing including gardens, lake, Doddabetta and tea factory. Stay at Ooty." },
+        { "day": "Day 5", "text": "Ooty to Mysore via Pykara and forest route. Stay at Mysore." },
+        { "day": "Day 6", "text": "Mysore sightseeing including palace, Chamundi Hills, zoo and Brindavan Gardens. Stay at Mysore." },
+        { "day": "Day 7", "text": "Mysore to Bangalore sightseeing and drop." }
+      ]
+    },
+    {
+      "id": "munnar-thekkady-varkala-alleppey-kovalam-7d",
+      "title": "Munnar + Thekkady + Varkala + Alleppey + Kovalam",
+      "route": "Coimbatore → Munnar → Thekkady → Varkala → Alleppey → Kovalam",
+      "duration": "7 Days / 6 Nights",
+      "image": "images/kovalam.webp",
+      "badges": ["Kerala", "Premium"],
+      "itinerary": [
+        { "day": "Day 1", "text": "Coimbatore to Munnar. Scenic drive and check-in. Stay at Munnar." },
+        { "day": "Day 2", "text": "Munnar sightseeing including Mattupetty Dam, Echo Point, Top Station and tea gardens. Stay at Munnar." },
+        { "day": "Day 3", "text": "Munnar to Thekkady. Spice Garden, cultural show and local sightseeing. Stay at Thekkady." },
+        { "day": "Day 4", "text": "Thekkady to Varkala. Visit beach and cliff. Stay at Varkala." },
+        { "day": "Day 5", "text": "Varkala to Alleppey. Backwater and houseboat experience. Stay at Alleppey." },
+        { "day": "Day 6", "text": "Alleppey to Kovalam. Beach leisure and sightseeing. Stay at Kovalam." },
+        { "day": "Day 7", "text": "Trivandrum sightseeing and drop." }
       ]
     }
   ]

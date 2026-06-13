@@ -59,7 +59,7 @@
 .why-about h2,
 .mission-box h2{
   font-size:clamp(1.9rem,4vw,3.3rem);
-  font-weight:800;
+  font-weight:600;
   letter-spacing:-1px;
 }
 
@@ -100,7 +100,7 @@
 }
 
 .about-card h4{
-  font-weight:900;
+  font-weight:600;
   margin-bottom:12px;
 }
 
@@ -131,7 +131,7 @@
   border:1px solid rgba(0,0,0,.06);
   border-radius:18px;
   padding:18px;
-  font-weight:800;
+  font-weight:600;
   color:#333;
 }
 
@@ -152,7 +152,7 @@
 
 .stat-box h3{
   color:var(--gold);
-  font-weight:900;
+  font-weight:600;
   font-size:2.4rem;
 }
 
@@ -247,7 +247,7 @@
 .footer-credit a{
     color:var(--gold) !important;
     text-decoration:none;
-    font-weight:800;
+    font-weight:600;
     transition:.3s ease;
 }
 
