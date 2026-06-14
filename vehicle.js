@@ -78,7 +78,7 @@ const vehicles = {
     {
       id:"innova-hycross",
       name:"Toyota Hycross",
-      image:"images/vehicles/Hycross1.webp",
+      image:"images/vehicles/hycross1.webp",
       type:"7 Seater",
       seats:"7 Seats",
       bags:"4 Bags",
